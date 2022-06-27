@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    <title>File Server</title>
+    <meta name="viewport" content="user-scalable=yes,initial-scale=1.0,width=device-width">
+    <link rel="stylesheet" href="styles1.css">
+
+</head>
+
+<body>
+    <div class='topnav'>
+    
+        <a href="../index.html">Home</a>
+        <a href="get.html">Get</a>
+        <a href="send.html">SEND</a>
+    </div>
+
+    <div class="form-container">
+    <h3>Select File to Upload in the SD Card</h3>
+    
+    <form action="http://192.168.1.10/handleupload_sd" method="post" enctype="multipart/form-data"><input class="buttons" style="width:40%"
+            type="file" name="fupload" id="fupload" value=""><br><br><button class="buttons" style="width:10%"
+            type="submit">Upload File</button><br><a href="send.html"><br>[Back]</a><br><br>
+        
+    </form>
+    </div>
+    
+    <footer> 
+    <div id="contener_footer">
+       <div class="icons_footer">
+        <div class="icon_enet"><img src="images/enetcom2.png"></div>
+        <div class="foo"> PFE : Sfax Industry 4.0 Center </div>  
+        <div class="icon_ind"><img src="images/logoi404.png"></div>
+        </div>
+      </div>
+    </footer>
+</body>
+
+</html>

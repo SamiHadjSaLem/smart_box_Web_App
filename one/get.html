@@ -1,0 +1,78 @@
+<html>
+
+<head>
+    <title>File Server</title>
+    <meta name="viewport" content="user-scalable=yes,initial-scale=1.0,width=device-width">
+    <link rel="stylesheet" href="styles1.css">
+
+</head>
+<body>
+    <div class='topnav'>
+    
+        <a href="../index.html">Home</a>
+        <a href="get.html">GET</a>
+        <a href="send.html">SEND</a>
+    
+    </div>
+
+    <div class="main-contain">
+    
+    
+        <h1 >Get files </h1>
+        <div class="div">
+            <div class="flex-1">
+                <button class="button btn-3"  onclick="window.location.href ='http:/'+'/192.168.1.10/downloadSD';">SD Card</button>
+                <button class="button btn-3" onclick="window.location.href ='http:/'+'/192.168.1.10/download_mem';">Flash Memory</button>
+            </div>
+    
+    
+        </div>
+    
+    </div>
+    
+    <!-- <script>doc(lien)</script <br> -->
+    <footer> 
+    <div id="contener_footer">
+       <div class="icons_footer">
+        <div class="icon_enet"><img src="images/enetcom2.png"></div>
+        <div class="foo"> PFE : Sfax Industry 4.0 Center </div>  
+        <div class="icon_ind"><img src="images/logoi404.png"></div>
+        </div>
+      </div>
+    </footer>
+</body>
+<script>
+    var var1="192.168.1.10"
+
+    var xhr = new XMLHttpRequest();
+
+        // 2. Configure it: GET-request for the URL /article/.../load
+        xhr.open('GET', 'get_IpAdress.php');
+        // xhr.responseType = 'json';
+        xhr.responseType = 'text';
+
+        // 3. Send the request over the network
+        xhr.send();
+
+        // 4. This will be called after the response is received
+
+        xhr.onload = function () {
+
+
+            var responseObj = xhr.responseText;
+            console.log(responseObj);
+            document.getElementById('ip').innerHTML =var1;
+             
+
+
+
+            /***/
+        }
+    
+
+
+
+
+
+</script>
+</html>
